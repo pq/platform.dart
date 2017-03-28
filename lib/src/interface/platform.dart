@@ -118,7 +118,7 @@ abstract class Platform {
   ///
   /// This value is hard-coded to true, except on Windows where only more recent
   /// versions of Windows 10 support the codes.
-  bool get ansiSupported;
+  bool get stdinAnsiSupported;
 
   /// Returns a JSON-encoded representation of this platform.
   String toJson() {
@@ -135,7 +135,7 @@ abstract class Platform {
       'packageRoot': packageRoot,
       'packageConfig': packageConfig,
       'version': version,
-      'ansiSupported': ansiSupported,
+      'stdinAnsiSupported': stdinAnsiSupported,
     });
   }
 }

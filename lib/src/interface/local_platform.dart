@@ -48,5 +48,5 @@ class LocalPlatform extends Platform {
   String get version => io.Platform.version;
 
   @override
-  bool get ansiSupported => io.stdin.supportsAnsiEscapes;
+  bool get stdinAnsiSupported => io.stdin.supportsAnsiEscapes;
 }
